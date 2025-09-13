@@ -22,7 +22,7 @@ function Home() {
           </h2>
           <p>
             A passionate web developer with experience in relevant tools,
-            techonologies, <br /> or skills-e.g React,HTML,CSS and JavaScript.
+            techonologies, <br /> and skills-e.g React, HTML, CSS and JavaScript.
           </p>
           <div className="btn">
             <button onClick={handleWhatsApp}>SEND MESSAGE</button>

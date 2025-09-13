@@ -10,8 +10,8 @@ function Blog() {
         <div className="blog-feature">
           <h2>MY BLOG</h2>
           <p>
-            In this post, i'll walk you through how i built mine <br />
-            using React,JavaScript,HTML, and CSS.
+            In this post, I'll walk you through how I built mine <br />
+            using React, JavaScript, HTML and CSS.
           </p>
         </div>
         <div className="blog-img">
@@ -32,7 +32,7 @@ function Blog() {
             <h4>Netlify</h4>
             <p>
               As an alternative for fast hosting <br />
-              and serveless functions.
+              and serverless functions.
             </p>
             <span>2 September 2025</span>
           </div>
