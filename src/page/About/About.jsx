@@ -23,8 +23,8 @@ function About() {
                 </div>
                 <div className='web-text-2'>
                    <h2>Little About Me</h2>
-                   <p>Whether your are a start up, small business <br />
-                   or established brand i'm here to help your <br />
+                   <p>Whether you are a start up, small business <br />
+                   or established brand i'm here to help you <br />
                    establish a strong online presence.</p>
                    <a href="#">Read More</a>
                 </div>
