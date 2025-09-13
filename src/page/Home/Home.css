@@ -1,0 +1,147 @@
+
+.home-section{
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 150px;
+ gap: 50px;
+}
+.home-feature h2 {
+  font-size: 50px;
+  color: black;
+  
+}
+.home-section img{
+    width: 450px;
+    height: 470px;
+}
+.home-feature p{
+    margin-top: 20px;
+}
+.btn{
+    margin-top: 40px;
+}
+.btn button{
+    width: 180px;
+    height: 47px;
+    border: none;
+    outline: none;
+    background-color: #FFE600;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.btn button:hover{
+    border: 2px solid #FFE600;
+    background: none;
+}
+
+@media(max-width:991px){
+    .home-section img{
+    width: 270px;
+    height: 300px;
+   
+}
+.home-section{
+    padding: 35px;
+     gap: 10px;
+}
+.home-feature h2{
+    font-size: 30px;
+}
+    
+}
+
+@media(max-width:850px){
+.home-section img{
+    width: 250px;
+    height: 270px;
+   
+}
+.home-section{
+    padding: 35px;
+     gap: 5px;
+}
+.home-feature h2{
+    font-size: 25px;
+ gap: 20px;
+}
+}
+
+@media(max-width:768px){
+    .home-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 70px;
+        gap: 25px;
+    }
+    .home-feature h2{
+        font-size: 25px;
+    }
+    .home-feature p{
+        font-size: 15px;
+    }
+    .home-section img{
+        width: 350px;
+        height: 350px;
+    }
+    
+
+}
+
+@media(max-width:645px){
+ .home-section{
+        display: flex;
+        flex-direction: column;
+         gap: 25px;
+    }
+    .home-section{
+        padding: 30px;
+    }
+}
+
+@media(max-width:545px){
+ .home-section{
+        display: flex;
+        flex-direction: column;
+         gap: 25px;
+    }
+    .home-feature{
+        text-align: center;
+    }
+    .home-feature h2{
+        font-size: 30px;
+    }
+    .home-feature p{
+        font-size: 13px;
+    }
+    .home-section img{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media(max-width:400px){
+    .home-section{
+        display: flex;
+        flex-direction: column;
+         gap: 25px;
+  
+     }
+    .home-feature{
+        text-align: center;
+    }
+    .home-feature h2{
+        font-size: 30px;
+    }
+    .home-feature p{
+        font-size: 13px;
+    }
+    .home-section img{
+        width: 290px;
+        height: 290px;
+    }
+
+}

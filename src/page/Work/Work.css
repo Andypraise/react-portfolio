@@ -1,0 +1,264 @@
+.work-section{
+    display: flex;
+    flex-direction: column;
+margin-top: 60px;
+}
+
+
+.work-feature h2{
+    font-size: 50px;
+    margin-left: 150px;
+}
+.select-all{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    margin-top: 30px;
+    
+}
+.btn-main {
+    margin-right: 100px;
+    gap: 20px;
+    
+}
+.btn-main button:first-child{
+    background-color: #FFE600;
+}
+.btn-main button{
+    width: 85px;
+    height: 27px;
+    font-size: 10px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    transition: all .3s ease-in-out;
+}
+.btn-main button:hover{
+    background-color: #FFE600;
+}
+.all li{
+    list-style: none;
+    font-size: 15px;
+}
+.main-all{
+    position: relative;
+}
+.link{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    transition: opacity.3s ease;
+    opacity: 0;
+    
+     box-shadow: 0 2px 10px rgba(17, 17, 17, 0.1);
+     z-index: 20;
+}
+.main-all{
+    list-style: none;
+}
+ a{
+    text-decoration: none;
+    color: black;
+}
+.link li{
+    list-style: none;
+    margin-top: 10px;
+}
+.link a{
+    text-decoration: none;
+    padding: 10px;
+}
+.link a:hover{
+background-color: #FFE600;
+}
+.all:hover .link{
+    
+    opacity:1 ;
+    
+}
+.portfolio-display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.project-item{
+position: relative;
+margin-top: 50px;
+}
+.project-item img{
+    display: block;
+    width: 350px;
+    height: 330px;
+    margin-right: 20px;
+}
+.overlay{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 95%;
+    background-color: #ffe60071;
+    transform: translateY(100px);
+    transition: opacity .3s ease, transform .3s ease;
+    opacity: 0;
+    white-space: pre-line;
+    
+}
+.overlay h2{
+margin-top: 70px;
+}
+.project-item:hover .overlay{
+    transform: translateY(0);
+    opacity: 1;
+}
+.work-section .btn{
+    margin-top: 100px;
+    text-align: center;
+}
+@media(max-width:991px){
+    
+}
+
+@media(max-width:850px){
+.select-all{
+    padding: 35px;
+}
+}
+
+@media(max-width:768px){
+.work-section{
+    display: flex;
+    flex-direction: column;
+}
+.select-all{
+    display: flex;
+    flex-direction: column;
+
+}
+.work-feature h2{
+    font-size: 35px;
+    margin: 0;
+    text-align: center;
+}
+.btn-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+.btn-main button{
+    width: 370px;
+}
+}
+
+@media(max-width:645px){
+    .work-section{
+    display: flex;
+    flex-direction: column;
+}
+.select-all{
+    display: flex;
+    flex-direction: column;
+
+}
+.work-feature h2{
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+}
+.btn-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+.btn-main button{
+    width: 300px;
+}
+.project-item img{
+    width: 350px;
+    height: 300px;
+}
+
+}
+
+@media(max-width:545px){
+.work-section{
+    display: flex;
+    flex-direction: column;
+}
+.select-all{
+    display: flex;
+    flex-direction: column;
+
+}
+.work-feature h2{
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+}
+.btn-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+.btn-main button{
+    width: 300px;
+}
+.project-item img{
+    width: 300px;
+    height: 300px;
+}
+}
+@media(max-width:400px){
+.work-section{
+    display: flex;
+    flex-direction: column;
+}
+.work-feature h2{
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+}
+.select-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+.btn-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+.btn-main button{
+    width: 230px;
+}
+.project-display{
+    text-align: center;
+}
+.project-item img{
+    width: 270px;
+    height: 250px;
+}
+}
