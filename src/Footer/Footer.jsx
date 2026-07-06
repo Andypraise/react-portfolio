@@ -6,13 +6,14 @@ function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const year = new Date().getFullYear()
   return (
     <div className="footer-section">
       <div className="footer-feature">
         <div className="logo">
           <h1>AC</h1>
         </div>
-        <p>&copy; 2025 - Andy Chibueze,All Right Reserved.</p>
+        <p>&copy; {year} - Andy Chibueze,All Right Reserved.</p>
       </div>
       <div>
         <a href="" onClick={scrollToTop}>BACK TO TOP <img src={backImage} alt="" width="20px" /></a>
