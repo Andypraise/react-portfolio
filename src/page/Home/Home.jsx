@@ -1,5 +1,5 @@
 import React from "react";
-import homeImage from "../../assets/image7.png";
+import homeImage from "../../assets/IMG-20260531-WA0074.jpg";
 import certificate from "../../assets/nomba-certified-NMB-2026-T4MHSO.png"; // Update with your actual file name
 import "./Home.css";
 
