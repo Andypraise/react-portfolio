@@ -7,9 +7,11 @@ import About from "./page/About/About";
 import Blog from "./page/Blog/Blog";
 import Contact from "./page/Contact/Contact";
 import Footer from "./Footer/Footer";
+import ScrollAnimation from "./components/ScrollAnimation/ScrollAnimation";
 function App() {
   return (
     <div>
+      <ScrollAnimation/>
       <Navbar />
       <Home />
       <Work />

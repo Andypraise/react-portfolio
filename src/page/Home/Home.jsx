@@ -22,7 +22,7 @@ function Home() {
         <div className="home-feature">
           <div className="button-group">
             <span className="btn-green">
-              <span className="pulse-dot"></span>
+              <span className="pulse-dot" ></span>
               Available for Remote Work
             </span>
 
