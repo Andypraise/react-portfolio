@@ -120,7 +120,7 @@ right: 0;
         display: block;
     }
     .line-img a{
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
     
     .location{
@@ -166,7 +166,7 @@ margin-top: 10px;
         gap: 15px;
     }
       .line-img a{
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 }
 @media(max-width:545px){
@@ -174,7 +174,7 @@ margin-top: 10px;
         margin: 0;
     }
       .line-img a{
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
      .contact-feature h2{
         font-size: 30px;
@@ -232,6 +232,6 @@ margin-top: 10px;
         gap: 0;
     }
       .line-img a{
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 }
