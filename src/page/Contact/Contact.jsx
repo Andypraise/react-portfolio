@@ -125,7 +125,10 @@ function Contact() {
               <p>andypraise890@gmail.com</p>
             </div>
           </div>
-          <div className="line-img">
+  
+        </div>
+      </div>
+              <div className="line-img no-animation">
             <a
               href="https://www.facebook.com/profile.php?id=61578592229212"
               target="_blank"
@@ -158,8 +161,6 @@ function Contact() {
               <FaLinkedinIn />
             </a>
           </div>
-        </div>
-      </div>
     </div>
   );
 }
