@@ -95,6 +95,7 @@ bottom: 0;
 right: 0;
 }
 
+
 .line-img a {
   width: 45px;
   height: 45px;
@@ -117,6 +118,9 @@ right: 0;
 @media(max-width:768px){
     .menu{
         display: block;
+    }
+    .line-img a{
+        margin-bottom: 5px;
     }
     
     .location{
@@ -161,10 +165,16 @@ margin-top: 10px;
         margin-top:25px;
         gap: 15px;
     }
+      .line-img a{
+        margin-bottom: 5px;
+    }
 }
 @media(max-width:545px){
     .contact-feature{
         margin: 0;
+    }
+      .line-img a{
+        margin-bottom: 5px;
     }
      .contact-feature h2{
         font-size: 30px;
@@ -220,5 +230,8 @@ margin-top: 10px;
     .line-img{
         margin: 0;
         gap: 0;
+    }
+      .line-img a{
+        margin-bottom: 5px;
     }
 }
