@@ -41,7 +41,7 @@ function Home() {
           <p>
             A passionate web developer with experience in relevant tools,
             technologies, <br />
-            and skills such as React, HTML, CSS, and JavaScript.
+            and skills such as React,Next.Js, HTML, CSS, and JavaScript.
           </p>
 
           <div className="btn">

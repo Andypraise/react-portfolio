@@ -1,13 +1,22 @@
 import React, { useState } from "react";
+import {
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaFacebookF,
+  FaWhatsapp,
+  FaTwitter,
+  FaLinkedinIn,
+} from "react-icons/fa";
 import emailjs from "emailjs-com";
 import "./Contact.css";
-import contactImage from "../../assets/image7.png";
-import locateImage from "../../assets/image11.png"
-import phoneImage from "../../assets/image12.png"
-import emailImage from "../../assets/image13.png"
-import faceImage from "../../assets/image14.png"
-import twiImage from "../../assets/image15.png"
-import webImage from "../../assets/image16.png"
+import contactImage from "../../assets/IMG-20260531-WA0074.jpg";
+// import locateImage from "../../assets/image11.png";
+// import phoneImage from "../../assets/image12.png";
+// import emailImage from "../../assets/image13.png";
+// import faceImage from "../../assets/image14.png";
+// import twiImage from "../../assets/image15.png";
+// import webImage from "../../assets/image16.png";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -28,7 +37,7 @@ function Contact() {
         "service_o3u0k3m", // Your Service ID
         "template_k7vefdy", // ✅ Correct Template ID
         formData,
-        "YZ_Arzau_R4mJZLnL" // Your Public Key
+        "YZ_Arzau_R4mJZLnL", // Your Public Key
       )
 
       .then(
@@ -38,7 +47,7 @@ function Contact() {
         },
         (error) => {
           alert("❌ Failed to send message: " + error.text);
-        }
+        },
       );
   };
 
@@ -92,24 +101,62 @@ function Contact() {
         </div>
         <div>
           <div className="location">
-            <div className="line"><img src={locateImage} alt="" />
-            <p>7 Powerline <br />
-            Aba, Abia State.</p>
-            </div>
             <div className="line">
-              <img src={phoneImage} alt="" />
-              <p>+2349133277350</p>
-              <p>+2349134820922</p>
+              <FaMapMarkerAlt className="contact-icon" />
+
+              <p>
+                7 Powerline <br />
+                Aba, Abia State.
+              </p>
             </div>
+
             <div className="line">
-              <img src={emailImage} alt="" />
+              <FaPhoneAlt className="contact-icon" />
+
+              <p>
+                +2349133277350 <br />
+                +2349134820922
+              </p>
+            </div>
+
+            <div className="line">
+              <FaEnvelope className="contact-icon" />
+
               <p>andypraise890@gmail.com</p>
             </div>
           </div>
           <div className="line-img">
-            <img src={faceImage} alt="" />
-            <img src={twiImage} alt="" />
-            <img src={webImage} alt="" />
+            <a
+              href="https://www.facebook.com/profile.php?id=61578592229212"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF />
+            </a>
+
+            <a
+              href="https://wa.me/2349133277350"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp />
+            </a>
+
+            <a
+              href="https://x.com/AndyPraise8266"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/andy-chibueze-54b653375?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn />
+            </a>
           </div>
         </div>
       </div>
