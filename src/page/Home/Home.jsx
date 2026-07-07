@@ -60,7 +60,7 @@ function Home() {
             A passionate web developer with experience in relevant tools,
             technologies,
             <br />
-            and skills such as React, Next.js, HTML, CSS, and JavaScript.
+            and skills such as <strong>React,</strong> <strong>Next.js,</strong><strong> HTML,</strong> <strong>CSS,</strong> and <strong>JavaScript.</strong>
           </p>
 
           <div className="btn">

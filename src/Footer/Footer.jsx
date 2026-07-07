@@ -1,24 +1,59 @@
 import React from "react";
 import "./Footer.css";
-import backImage from "../assets/image1.png"
+import backImage from "../assets/image1.png";
+
 function Footer() {
-     // Scroll to top function
+
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
-  const year = new Date().getFullYear()
+
+  const year = new Date().getFullYear();
+
   return (
-    <div className="footer-section">
+    <footer className="footer-section">
+
       <div className="footer-feature">
+
         <div className="logo">
           <h1>AC</h1>
         </div>
-        <p>&copy; {year} - Andy Chibueze,All Right Reserved.</p>
+
+        <div className="footer-text">
+          <h3>Andy Chibueze</h3>
+
+          <p>
+            Frontend Developer creating modern, responsive and
+            user-friendly web experiences.
+          </p>
+
+          <span>
+            © {year} Andy Chibueze. All Rights Reserved.
+          </span>
+        </div>
+
       </div>
-      <div>
-        <a href="" onClick={scrollToTop}>BACK TO TOP <img src={backImage} alt="" width="20px" /></a>
+
+<div className="back">
+      <button 
+        className="back-top"
+        onClick={scrollToTop}
+      >
+        BACK TO TOP
+
+        <img 
+          src={backImage} 
+          alt="Back to top"
+        />
+
+      </button>
       </div>
-    </div>
+
+
+    </footer>
   );
 }
 

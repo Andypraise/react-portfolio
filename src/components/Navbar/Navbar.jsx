@@ -20,7 +20,7 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
 
-        <div className="logo">
+        <div className="logo-1">
           <h1>AC</h1>
         </div>
 

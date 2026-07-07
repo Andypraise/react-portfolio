@@ -33,21 +33,46 @@ body {
   gap: 95px;
 }
 
+/* Logo */
 
-.logo {
-  border: 1px solid rgb(19, 18, 18);
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
+.logo-1 {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    border: 3px solid black;
+
+    background: rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(10px);
+
+    transition: .4s ease;
 }
 
 
-.logo h1 {
-  font-size: 20px;
-  text-align: center;
-  color: rgb(27, 26, 26);
+.logo-1:hover {
+    transform: rotate(10deg) scale(1.1);
+
+    background: white;
 }
 
+
+.logo-1 h1 {
+    color: black;
+    font-size: 25px;
+    margin: 0;
+    transition: .3s;
+}
+
+
+.logo-1:hover h1 {
+    color: #5b21b6;
+}
 
 /* Desktop Navigation */
 
