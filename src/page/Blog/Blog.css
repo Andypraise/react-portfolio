@@ -1,81 +1,200 @@
-.blog-section{
-    background-color :#FBFBFB; 
+/* ================= Blog Section ================= */
+
+.blog-section {
+  background-color: #fbfbfb;
+  padding: 80px 20px;
 }
 
-.blog-feature{
-    margin-left: 120px;
-margin-top: 70px;
-}
-.blog-feature h2{
-padding-top: 40px;
-    font-size: 50px;
+
+/* ================= Blog Header ================= */
+
+.blog-feature {
+  margin-left: 120px;
+  margin-top: 70px;
 }
 
-.blog-feature p{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.blog-feature h2 {
+  padding-top: 40px;
+  font-size: 50px;
+  color: #5b21b6;
+  line-height: 1.2;
 }
-.blog-img{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    margin-top: 50px;
+
+.blog-feature p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.7;
 }
-.blog-text{
-     background-color: #FFFFFF;
-    
-    width: px;
-    height: 380px;
-    padding:20px;
-    margin-bottom: 30px;
+
+
+/* ================= Blog Cards ================= */
+
+.blog-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 35px;
+  margin-top: 50px;
 }
-.blog-text p{
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+
+.blog-text {
+  background-color: #ffffff;
+  width: 320px;
+  min-height: 380px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all .35s ease;
 }
-.blog-text span{
-    margin-top: 20px;
-} 
-.blog-text img{
-    width: 300px;
-    height: 200px;
+
+
+.blog-text:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(91,33,182,0.18);
 }
+
+
+/* ================= Blog Images ================= */
+
+.blog-text img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: .4s ease;
+}
+
+
+.blog-text:hover img {
+  transform: scale(1.05);
+}
+
+
+/* ================= Blog Content ================= */
+
+.blog-text h4 {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #5b21b6;
+}
+
+
+.blog-text p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.blog-text span {
+  display: inline-block;
+  margin-top: 15px;
+  color: #7c3aed;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* ================= Tablet ================= */
+
+@media(max-width:991px){
+
+  .blog-feature {
+    margin-left: 40px;
+  }
+
+
+  .blog-feature h2 {
+    font-size: 42px;
+  }
+
+}
+
+
+/* ================= Mobile ================= */
+
 @media(max-width:645px){
-      .blog-feature{
-        margin: 0;
-        text-align: center;
-    }
+
+  .blog-feature {
+    margin: 0;
+    text-align: center;
+  }
+
+
+  .blog-feature h2 {
+    font-size: 32px;
+  }
+
+
+  .blog-feature p {
+    font-size: 15px;
+  }
+
 }
+
+
+/* ================= Small Mobile ================= */
+
 @media(max-width:545px){
-      .blog-feature{
-        margin: 0;
-        text-align: center;
-    }
-    .blog-feature h2{
-        font-size: 30px;
-    }
-    .blog-feature p{
-        font-size: 15px;
-    }
+
+  .blog-feature {
+    margin: 0;
+    text-align: center;
+  }
+
+
+  .blog-feature h2 {
+    font-size: 30px;
+  }
+
+
+  .blog-feature p {
+    font-size: 14px;
+  }
+
+
+  .blog-text {
+    width: 300px;
+    text-align: center;
+  }
+
 }
+
+
+/* ================= Extra Small Devices ================= */
+
 @media(max-width:400px){
-      .blog-feature{
-        margin: 0;
-        text-align: center;
-    }
-    .blog-text{
-        width: 300px;
-        text-align: center;
-        padding: 0;
-    }
-    .blog-text p{
-        padding-top: 5px;
-    }
-    .blog-text img{
-        width: 270px;
-        margin-top: 10px;
-    }
-  
+
+  .blog-section {
+    padding: 50px 10px;
+  }
+
+
+  .blog-feature h2 {
+    font-size: 28px;
+  }
+
+
+  .blog-text {
+    width: 280px;
+    padding: 15px;
+  }
+
+
+  .blog-text img {
+    width: 100%;
+    height: 180px;
+  }
+
+
+  .blog-text p {
+    padding-top: 10px;
+  }
+
 }

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import homeImage from "../../assets/IMG-20260531-WA0074.jpg";
-import certificate from "../../assets/nomba-certified-NMB-2026-T4MHSO.png"; // Update with your actual file name
+import certificate from "../../assets/nomba-certified-NMB-2026-T4MHSO.png";
 import "./Home.css";
 
 function Home() {
+  const [showCert, setShowCert] = useState(false);
+
   const phoneNumber = "2349133277350";
+  const year = new Date().getFullYear();
 
   const handleWhatsApp = () => {
     const defaultMessage =
@@ -16,13 +19,28 @@ function Home() {
     );
   };
 
+  const handleDownload = () => {
+    alert(
+      "Download started! Your Nomba Certificate " +
+        year +
+        " is being downloaded 📜✅"
+    );
+
+    const link = document.createElement("a");
+    link.href = certificate;
+    link.download = `Nomba-Certificate-${year}.png`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div>
       <div className="home-section">
         <div className="home-feature">
           <div className="button-group">
             <span className="btn-green">
-              <span className="pulse-dot" ></span>
+              <span className="pulse-dot"></span>
               Available for Remote Work
             </span>
 
@@ -40,8 +58,9 @@ function Home() {
 
           <p>
             A passionate web developer with experience in relevant tools,
-            technologies, <br />
-            and skills such as React,Next.Js, HTML, CSS, and JavaScript.
+            technologies,
+            <br />
+            and skills such as React, Next.js, HTML, CSS, and JavaScript.
           </p>
 
           <div className="btn">
@@ -49,17 +68,48 @@ function Home() {
               SEND MESSAGE
             </button>
 
-            <a
-              href={certificate}
-              download
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
               className="btn-violet"
+              onClick={() => setShowCert(true)}
             >
               Nomba Certificate
-            </a>
+            </button>
           </div>
         </div>
+
+        {/* Certificate Popup */}
+        {showCert && (
+          <div
+            className="popup-overlay"
+            onClick={() => setShowCert(false)}
+          >
+            <div
+              className="popup-content"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                className="close-btn"
+                onClick={() => setShowCert(false)}
+              >
+                ×
+              </button>
+
+              <img
+                src={certificate}
+                alt="Nomba Certificate"
+                style={{ width: "100%", borderRadius: "10px" }}
+              />
+
+              <button
+                onClick={handleDownload}
+                className="btn btn-green"
+                style={{ marginTop: "16px" }}
+              >
+                Download Certificate
+              </button>
+            </div>
+          </div>
+        )}
 
         <div>
           <img src={homeImage} alt="Frontend Developer" />
