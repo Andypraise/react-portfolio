@@ -39,7 +39,7 @@ function Blog() {
 
       <div className="blog-feature">
 
-        <span className="blog-tag">
+        <span className="blog-tag tag-all">
           MY BLOG
         </span>
 

@@ -7,7 +7,7 @@ function About() {
     <section id="about" className="about-section page-section">
 
       <div className="about-feature">
-        <span className="about-tag">
+        <span className="about-tag tag-all">
           ABOUT ME
         </span>
 

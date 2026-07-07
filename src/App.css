@@ -12,6 +12,26 @@ html{
   opacity: 1;
   transform: translateY(0);
 }
+.page-section .tag-all {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+
+.page-section .tag-all::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    #5b21b6,
+    #8b5cf6
+  );
+  border-radius: 10px;
+}
 /* .page-section {
   min-height: 100vh;
   display: flex;

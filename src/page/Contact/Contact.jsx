@@ -55,7 +55,7 @@ function Contact() {
     <div>
       <div id="contact" className="contact-section page-section">
         <div className="contact-feature">
-          <h2>CONTACT ME.</h2>
+          <h2 className="tag-all">CONTACT ME.</h2>
           <p>Have a project in mind, or just want to say hi? Let's connect!</p>
         </div>
 

@@ -140,6 +140,7 @@ margin-top: 10px;
 @media(max-width:645px){
       .contact-feature{
         margin: 0;
+        padding:20px;
     }
     .contact-feature h2{
         font-size: 30px;
@@ -172,6 +173,7 @@ margin-top: 10px;
 @media(max-width:545px){
     .contact-feature{
         margin: 0;
+        padding:20px;
     }
       .line-img a{
         margin-bottom: 10px;
@@ -210,6 +212,7 @@ margin-top: 10px;
 @media(max-width:400px){
       .contact-feature{
         margin: 0;
+        padding:20px;
     }
     form input{
         width: 300px;
