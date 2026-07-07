@@ -4,7 +4,7 @@ html{
 .page-section:not(.no-animation) {
   opacity: 0;
   transform: translateY(80px);
-  transition: all 0.8s ease;
+  transition: all 0.2s ease;
 }
 
 
