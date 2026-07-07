@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import homeImage from "../../assets/IMG-20260531-WA0074.jpg";
+import homeImage from "../../assets/ChatGPT Image Jul 7, 2026, 12_03_46 PM.png";
 import certificate from "../../assets/nomba-certified-NMB-2026-T4MHSO.png";
 import "./Home.css";
 

@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import emailjs from "emailjs-com";
 import "./Contact.css";
-import contactImage from "../../assets/IMG-20260531-WA0074.jpg";
+import contactImage from "../../assets/ChatGPT Image Jul 7, 2026, 12_03_46 PM.png";
 // import locateImage from "../../assets/image11.png";
 // import phoneImage from "../../assets/image12.png";
 // import emailImage from "../../assets/image13.png";

@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../../assets/IMG-20260531-WA0074.jpg";
+import aboutImage from "../../assets/ChatGPT Image Jul 7, 2026, 12_03_46 PM.png";
 import "./About.css";
 
 function About() {
